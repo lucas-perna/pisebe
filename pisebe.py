@@ -43,7 +43,7 @@ class Project():
             if not value: value = ""
             if not target: target = ""
             assert type(command) == str, "command must be type str"
-            assert type(target) == str, "target must be type str"
+            assert type(target) in [int,float,str], "target must be type int, float, or str"
             assert type(value) in [int,float,str], "value must be type int, float, or str"
             
             new_command = {"id": len(self.data["commands"]), "comment": "", "command": command}

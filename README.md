@@ -55,5 +55,5 @@ for library in ["random","fractions","math","pickle","csv","os","time","re"]:
 p.export()
 ```
 
-## Why did I make this
+## Purpose: Why I made this
 I made PI-SeBE while working on a data science project in which I needed to webscrape a website using Selenium. The problem I encountered was that the Selenium-WebDriver needs an internet browser, but I was working from a remote headless server (no internet browser and no graphical interface installed). My solution was to use the Selenium-Browser-Extension (SeBE) from my local desktop and then upload the webscraped data to where it was needed. SeBE already has a built-in IDE, but PI-SeBE connects the two so that you can make your SeBE projects all from within Python.

@@ -48,8 +48,8 @@ class Project():
             
             new_command = {"id": len(self.data["commands"]), "comment": "", "command": command}
 
-            new_command["target"] = target
+            new_command["target"] = str(target)
             new_command["targets"] = []
-            new_command["value"] = value
+            new_command["value"] = str(value)
             self.data["commands"].append(new_command)
             self.update_project()          
